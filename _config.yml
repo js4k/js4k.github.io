@@ -15,4 +15,8 @@ description:
 
 index:
   en:
-  fr: ru/index.html
+  ru: /ru/index.html
+
+feed:
+  en: /rss.xml
+  ru: /ru/rss.xml
