@@ -1,1 +1,18 @@
 theme: jekyll-theme-leap-day
+
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://js4k.github.io" # the base hostname & protocol for your site
+twitter_username: phil_rigovanov
+github_username:  a1ip
+
+title:
+  en: Reading “JavaScript for Кids”
+  ru: Читая книгу «JavaScript для детей»
+
+description:
+  en: This website created for those lucky ones who started to learn how to program in JavaScript with beautiful book “JavaScript for Кids” by Nick Morgan
+  ru: Сайт для тех счастливчиков, которые начали изучать как программиовать на JavaScript читая книгу Ника Моргана «JavaScript для детей»
+
+index:
+  en:
+  fr: ru/index.html
