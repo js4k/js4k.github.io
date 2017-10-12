@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+Host: js4k.github.io
+
+Sitemap: https://js4k.github.io/sitemap.xml
