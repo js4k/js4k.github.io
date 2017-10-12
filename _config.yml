@@ -20,3 +20,7 @@ index:
 feed:
   en: /rss.xml
   ru: /ru/rss.xml
+  
+view_on_github:
+  en: View On GitHub
+  ru: Смотреть на GitHub
