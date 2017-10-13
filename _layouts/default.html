@@ -26,7 +26,7 @@
         <p>{{ site.description[page.lang] | default: site.github.project_tagline }}</p>
       </header>
       <div id="banner">
-        {% if true %}<span id="logo"></span>
+        {% if false %}<span id="logo"></span>
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>{{ site.view_on_github[page.lang] | default: site.view_on_github.en }}</strong></a>{% endif %}
         {% if site.show_downloads %}
           <div class="downloads">
@@ -37,21 +37,23 @@
             </ul>
           </div>
         {% endif %}
-        <ul>
-       {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-       {% for post in posts %}
-         <li>
-           <a href="{{ post.url }}" class="button {{ post.lang }}">{{ post.lang }}</a>
-         </li>
-       {% endfor %}
+        <div class="nav">
+          <ul>
+         {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+         {% for post in posts %}
+           <li>
+             <a href="{{ post.url }}" class="button {{ post.lang }}">{{ post.lang }}</a>
+           </li>
+         {% endfor %}
 
-       {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-       {% for page in pages %}
-         <li>
-           <a href="{{ page.url }}" class="button {{ page.lang }}">{{ page.lang }}</a>
-        </li>
-      {% endfor %}
-      </ul>
+         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+         {% for page in pages %}
+           <li>
+             <a href="{{ page.url }}" class="button {{ page.lang }}">{{ page.lang }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
       </div><!-- end banner -->
     <div class="wrapper">
       <nav>
