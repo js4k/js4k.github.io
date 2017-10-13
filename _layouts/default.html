@@ -53,7 +53,7 @@
           </li>
         {% endfor %}
         {% for item in site.nav[page.lang] %}
-          <li><a href="{{ item.url }}" class="button {{ page.lang }}">{{ item.name }}</a></li>
+          <li><a href="{{ item[1].url }}" class="button {{ page.lang }}">{{ item[1].name }}</a></li>
         {% endfor %}
         </ul>
       </div>
