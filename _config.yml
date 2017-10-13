@@ -47,6 +47,10 @@ nav:
       name: Решения упражнений
       url: /ru/solutions/
 
+language:
+  en: English
+  ru: Русский
+
 site_languages:
   en: This site in other languages 
   ru: Этот сайт на других языках
