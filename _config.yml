@@ -46,3 +46,10 @@ nav:
     solutions:
       name: Решения упражнений
       url: /ru/solutions/
+
+site_languages:
+  en: This site in other languages 
+  ru: Этот сайт на других языках
+page_languages:
+  en: This page in other languages 
+  ru: Эта страница на других языках
