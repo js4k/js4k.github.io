@@ -56,7 +56,6 @@
         {% if site.github.is_project_page %}
           <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        {% if false %}<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>{% endif %}
         <p><small>
         {{ site.page_languages[page.lang] }}: 
         {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
@@ -73,6 +72,7 @@
           <a href="/">English</a>, 
           <a href="/ru/">Русский</a>.
         </small></p>
+        <p><small><a href="{{ site.github.repository_url }}"><strong>{{ site.view_on_github[page.lang] | default: site.view_on_github.en }}</strong></a> &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
