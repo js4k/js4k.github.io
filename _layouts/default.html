@@ -25,7 +25,7 @@
         <p>{{ site.description[page.lang] | default: site.github.project_tagline }}</p>
       </header>
       <div id="banner">
-        <a id="logo" href="https://twitter.com/{{ site.twitter_username }}"></a>{% if false %}
+        <a id="logo" href="https://twitter.com/{{ site.twitter_username }}" title="{{ site.twitter_link_title[page.lang] }}"></a>{% if false %}
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>{{ site.view_on_github[page.lang] | default: site.view_on_github.en }}</strong></a>{% endif %}
         <div class="nav">
           <ul>
