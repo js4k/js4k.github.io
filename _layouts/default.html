@@ -28,15 +28,6 @@
       <div id="banner">
         <a id="logo" href="https://twitter.com/{{ site.twitter_username }}"></a>{% if false %}
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>{{ site.view_on_github[page.lang] | default: site.view_on_github.en }}</strong></a>{% endif %}
-        {% if site.show_downloads %}
-          <div class="downloads">
-            <span>{{ site.downloads[page.lang] }}:</span>
-            <ul>
-              <li><a href="{{ site.code_download[page.lang].url }}" class="button">{{ site.code_download[page.lang].name }}</a></li>
-              <li><a href="{{ site.solutions_download[page.lang].url }}" class="button">{{ site.solutions_download[page.lang].name }}</a></li>
-            </ul>
-          </div>
-        {% endif %}
         <div class="nav">
           <ul>
         {% for item in site.nav[page.lang] %}
@@ -44,6 +35,15 @@
         {% endfor %}
         </ul>
       </div>
+      {% if site.show_downloads %}
+        <div class="downloads">
+          <span>{{ site.downloads[page.lang] }}:</span>
+          <ul>
+            <li><a href="{{ site.code_download[page.lang].url }}" class="button">{{ site.code_download[page.lang].name }}</a></li>
+            <li><a href="{{ site.solutions_download[page.lang].url }}" class="button">{{ site.solutions_download[page.lang].name }}</a></li>
+          </ul>
+        </div>
+      {% endif %}
       </div><!-- end banner -->
     <div class="wrapper">
       <nav>
