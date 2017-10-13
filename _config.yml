@@ -58,6 +58,10 @@ site_languages:
 page_languages:
   en: This page in other languages 
   ru: Эта страница на других языках
+  
+twitter_link_title:
+  en: Contact us by Twitter
+  ru: Пишите нам в Twitter
  
 downloads:
   en: Downloads
