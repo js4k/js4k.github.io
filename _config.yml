@@ -24,3 +24,25 @@ feed:
 view_on_github:
   en: View On GitHub
   ru: Смотреть на GitHub
+
+nav:
+  en:
+    home:
+      name: "Home"
+      url: "/"
+    about:
+      name: "About"
+      url: "/about/"
+  ru:
+    home:
+      name: "Главная"
+      url: "/ru/"
+    about:
+      name: "О сайте"
+      url: "/ru/about/"
+    samples:
+      name: "Код из книги"
+      url: "/ru/"
+    solutions:
+      name: "Решения упражнений"
+      url: "/ru/about/"
