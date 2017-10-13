@@ -3,7 +3,6 @@
 
 @import "{{ site.theme }}";
 
-
 #banner .nav a.button {
   float: right;
   margin:0 45px 0 0;
@@ -16,4 +15,8 @@
     text-transform:uppercase;
     text-shadow:rgba(#fff, 0.2) 0 1px 0;
   }
+}
+
+.github-button {
+    vertical-align: middle;
 }
