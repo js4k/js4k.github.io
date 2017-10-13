@@ -10,3 +10,13 @@ footer p {
 footer p iframe {
     vertical-align: middle;
 }
+
+#banner a#logo {
+  position:absolute;
+  height: 36px;
+  width: 36px;
+  right:7px;
+  top:7px;
+  display: block;
+  background: url(../images/twitter_logo.svg);
+}
