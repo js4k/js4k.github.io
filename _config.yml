@@ -42,7 +42,7 @@ nav:
       url: "/ru/about/"
     samples:
       name: "Код из книги"
-      url: "/ru/"
+      url: "/ru/samples/"
     solutions:
       name: "Решения упражнений"
-      url: "/ru/about/"
+      url: "/ru/solutions/"
