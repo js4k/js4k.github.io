@@ -3,9 +3,11 @@
 
 @import "{{ site.theme }}";
 
-#banner .nav a.button {
-  float: right;
+#banner .nav {
+  float: left;
+}
 
+#banner .nav a.button { 
   span {
     float:left;
     line-height:52px;
