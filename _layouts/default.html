@@ -53,7 +53,7 @@
           </li>
         {% endfor %}
         {% for menu in site.nav[page.lang] %}
-          <li><a href="{{ menu.url }}">{{ menu.name }}</a></li>
+          <li><a href="{{ menu.url }}" class="button {{ page.lang }}">{{ menu.name }}</a></li>
         {% endfor %}
         </ul>
       </div>
