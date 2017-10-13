@@ -11,7 +11,6 @@
     {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}{% for page in pages %}
     <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />{% endfor %}
     <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.baseurl | prepend: site.url }}">
-{% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
