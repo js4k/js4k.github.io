@@ -58,19 +58,15 @@
         {% endif %}
         {% if false %}<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>{% endif %}
         <p><small>
-          {{ site.page_languages[page.lang] }}: 
-          {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-            {% for post in posts %}
-             <li>
-               <a href="{{ post.url }}">{{ site.language[post.lang] }}</a>
-             </li>
-            {% endfor %}
-          {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-            {% for page in pages %}
-             <li>
-               <a href="{{ page.url }}">{{ site.language[page.lang] }}</a>
-             </li>
-             {% endfor %}
+        {{ site.page_languages[page.lang] }}: 
+        {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+          {% for post in posts %}
+          <a href="{{ post.url }}">{{ site.language[post.lang] }}</a>
+          {% endfor %}
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+          {% for page in pages %}
+          <a href="{{ page.url }}">{{ site.language[page.lang] }}</a>
+          {% endfor %}
         </small></p>
         <p><small>
           {{ site.site_languages[page.lang] }}: 
