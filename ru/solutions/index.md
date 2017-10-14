@@ -2,7 +2,7 @@
 layout: default
 ref: solutions
 lang: ru
-permalink: /ru/solutions
+permalink: /ru/solutions.html
 title: Решения упражнений
 description: Решения упражнений из книги Ника Моргана «JavaScript для детей» на русском языке
 ---
