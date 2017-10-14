@@ -5,7 +5,8 @@ lang: en
 ---
 
 <div class="home">
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Blog</h1>
+  <p class="rss-subscribe">subscribe <a href="{{ "/rss.xml" | prepend: site.baseurl }}">via RSS</a></p>
   <ul class="post-list">
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}
@@ -17,5 +18,4 @@ lang: en
       </li>
     {% endfor %}
   </ul>
-  <p class="rss-subscribe">subscribe <a href="{{ "/rss.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
