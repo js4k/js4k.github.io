@@ -3,7 +3,7 @@ layout: default
 ref: blog
 lang: ru
 ---
-{% include date.html date=page.date %}
+
 <div class="home">
   <h1 class="page-heading">Блог</h1>
   <p class="rss-subscribe">Лента новостей <a href="{{ "/ru/rss.xml" | prepend: site.baseurl }}">RSS</a></p>
@@ -11,7 +11,7 @@ lang: ru
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}
       <li>
-        <span class="post-meta">{{ day }}{{ sup }} {{ month }} {{ year }}{% if false %}{{ post.date | date: "%b %-d, %Y" }}{% endif %}</span>
+        <span class="post-meta">{% include date.html date=post.date %}{{ day }}{{ sup }} {{ month }} {{ year }}{% if false %}{{ post.date | date: "%b %-d, %Y" }}{% endif %}</span>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
