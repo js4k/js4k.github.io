@@ -11,52 +11,6 @@ footer p iframe {
     vertical-align: middle;
 }
 
-#banner { overflow: hidden;}
+#banner { overflow: hidden; }
 
-#banner a#logo {
-  position:absolute;
-  height: 36px;
-  width: 36px;
-  right:7px;
-  top:7px;
-  display: block;
-  background: url(../images/twitter_logo.svg);
-}
-
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
-
-  header {
-    padding:20px 20px;
-    margin: 0;
-
-    h1 {
-      font-size: 32px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      -o-text-overflow: ellipsis;
-      -ms-text-overflow: ellipsis;
-    }
-
-    p { display: none;}
-  }
-
-  #banner {
-    top: 80px;
-
-    .downloads { display: none;}
-  }
-
-  section {
-    margin-top: 130px;
-    margin-bottom: 0px;
-    width: auto;
-  }
-
-  header ul, header p.view {
-    position:static;
-  }
-}
+#banner #logo { background: url(../images/twitter_logo.svg); }
