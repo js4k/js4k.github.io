@@ -1,101 +1,17 @@
-{% capture hide %}
-
-{% if include.mode != 'month' %}
-
-      {% assign day = include.date | date: "%-d" %}
-
-  {% if page.lang != 'fr' %}
-
-    {% case day %}
-      {% when '1' or '21' or '31' %}
-        {% capture sup %}<sup>st</sup>{% endcapture %}
-      {% when '2' or '22' %}
-        {% capture sup %}<sup>nd</sup>{% endcapture %}
-      {% when '3' or '23' %}
-        {% capture sup %}<sup>rd</sup>{% endcapture %}
-      {% else %}
-        {% capture sup %}<sup>th</sup>{% endcapture %}
-    {% endcase %}
-
-  {% else %}
-
-    {% if day == "1" %}
-      {% capture sup %}<sup>er</sup>{% endcapture %}
-    {% else %}
-      {% capture sup %}{% endcapture %}
-    {% endif %}
-
-  {% endif %}
-
-{% endif %}
-
-{% if page.lang = 'ru' %}
-
-  {% assign m = include.date | date: "%-m" %}
-  {% case m %}
-    {% when '1' %}
-      {% capture month %}Января{% endcapture %}
-    {% when '2' %}
-      {% capture month %}Февраля{% endcapture %}
-    {% when '3' %}
-      {% capture month %}Марта{% endcapture %}
-    {% when '4' %}
-      {% capture month %}Апреля{% endcapture %}
-    {% when '5' %}
-      {% capture month %}Мая{% endcapture %}
-    {% when '6' %}
-      {% capture month %}Июня{% endcapture %}
-    {% when '7' %}
-      {% capture month %}Июля{% endcapture %}
-    {% when '8' %}
-      {% capture month %}Августа{% endcapture %}
-    {% when '9' %}
-      {% capture month %}Сентября{% endcapture %}
-    {% when '10' %}
-      {% capture month %}Октября{% endcapture %}
-    {% when '11' %}
-      {% capture month %}Ноября{% endcapture %}
-    {% when '12' %}
-      {% capture month %}Декабря{% endcapture %}
-  {% endcase %}
-{% else %}
-
-{% if page.lang != 'fr' %}
-
-  {% capture month %}{{ include.date | date: "%B" }}{% endcapture %}
-
-  {% else %}
-
-  {% assign m = include.date | date: "%-m" %}
-  {% case m %}
-    {% when '1' %}
-      {% capture month %}janvier{% endcapture %}
-    {% when '2' %}
-      {% capture month %}février{% endcapture %}
-    {% when '3' %}
-      {% capture month %}mars{% endcapture %}
-    {% when '4' %}
-      {% capture month %}avril{% endcapture %}
-    {% when '5' %}
-      {% capture month %}mai{% endcapture %}
-    {% when '6' %}
-      {% capture month %}juin{% endcapture %}
-    {% when '7' %}
-      {% capture month %}juillet{% endcapture %}
-    {% when '8' %}
-      {% capture month %}août{% endcapture %}
-    {% when '9' %}
-      {% capture month %}septembre{% endcapture %}
-    {% when '10' %}
-      {% capture month %}octobre{% endcapture %}
-    {% when '11' %}
-      {% capture month %}novembre{% endcapture %}
-    {% when '12' %}
-      {% capture month %}décembre{% endcapture %}
-  {% endcase %}
-
-{% endif %}
-{% endif %}
-{% capture year %}{{ include.date | date: "%Y" }}{% endcapture %}
-
-{% endcapture %}
+{% assign m = include.date | date: "%-m" %}
+{{ include.date | date: "%-d" }}
+{% case m %}
+  {% when '1' %}января
+  {% when '2' %}февраля
+  {% when '3' %}марта
+  {% when '4' %}апреля
+  {% when '5' %}мая
+  {% when '6' %}июня
+  {% when '7' %}июля
+  {% when '8' %}августа
+  {% when '9' %}сентября
+  {% when '10' %}октября
+  {% when '11' %}ноября
+  {% when '12' %}декабря
+{% endcase %}
+{{ include.date | date: "%Y" }}
