@@ -52,12 +52,9 @@
         {{ content }}
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
         <p><small>
         {{ site.page_languages[page.lang] }}: 
-        {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+        {% assign posts=site.posts | where:"ref", post.ref | sort: 'lang' %}
           {% for post in posts %}
           <a href="{{ post.url }}">{{ site.language[post.lang] }}</a>
           {% endfor %}
@@ -71,6 +68,9 @@
           <a href="/">English</a>, 
           <a href="/ru/">Русский</a>.
         </small></p>
+        {% if site.github.is_project_page %}
+          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a> <a class="github-button" href="https://github.com/js4k/js4k.github.io" data-show-count="true" aria-label="Star js4k/js4k.github.io on GitHub">{{ site.view_on_github[page.lang] }}</a> </small></p>
       </footer>
     </div>
