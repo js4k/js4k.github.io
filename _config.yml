@@ -2,6 +2,7 @@ theme: jekyll-theme-leap-day
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://js4k.github.io" # the base hostname & protocol for your site
+permalink: none
 show_downloads: true
 twitter_username: js4kids
 github_username:  js4k
