@@ -193,6 +193,17 @@ header {
   box-shadow: 0px 1px 3px rgba(0,0,0,.25);
   border-radius: 0px 2px 2px 0px;
   padding-right: 10px;
+  overflow: hidden;
+  
+  #logo { 
+    position:absolute;
+    height: 36px;
+    width: 36px;
+    right:7px;
+    top:7px;
+    display: block;
+    background: url(../images/twitter_logo.svg); 
+  }
 
   .button {
     border: 1px solid #dba500;
@@ -214,8 +225,9 @@ header {
       background: linear_gradient(rgb(255, 231, 136), rgb(255, 231, 136));
       background-color: #ffeca0;
     }
-    
-    nav {
+  }
+  
+  nav {
       position:fixed;
       left:50%;
       margin-left:-325px;
@@ -225,7 +237,6 @@ header {
       //font-size:14px;
       //background-color: #FFE788;
     }
-  }
 
   .downloads {
     float: right;
@@ -255,16 +266,6 @@ header {
         background-color: #FFE788;
       }
     }
-  }
-
-  #logo {
-    position:absolute;
-    height: 36px;
-    width: 36px;
-    right:7px;
-    top:7px;
-    display: block;
-    background: url(../images/octocat-logo.png);
   }
 }
 
@@ -344,6 +345,14 @@ footer {
   bottom:20px;
   text-align: right;
   line-height: 16px;
+  
+  p {
+    margin: 0 0 0.1em;
+  }
+
+  p iframe {
+    vertical-align: middle;
+  }
 }
 
 @media print, screen and (max-width: 1060px) {
@@ -510,17 +519,3 @@ footer {
     width:auto;
   }
 }
-
-//@import "{{ site.theme }}";
-
-footer p {
-  margin: 0 0 0.1em;
-}
-
-footer p iframe {
-    vertical-align: middle;
-}
-
-#banner { overflow: hidden; }
-
-#banner #logo { background: url(../images/twitter_logo.svg); }
