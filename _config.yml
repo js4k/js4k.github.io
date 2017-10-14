@@ -33,21 +33,21 @@ nav:
       name: Home
       url: /
     about:
-      name: About
-      url: /about
+      name: Blog
+      url: /blog
   ru:
     home:
       name: Главная
       url: /ru/
     about:
-      name: О сайте
-      url: /ru/about
-    samples:
-      name: Код из книги
-      url: /ru/samples
-    solutions:
-      name: Решения упражнений
-      url: /ru/solutions
+      name: Блог
+      url: /ru/blog
+#    samples:
+#      name: Код из книги
+#      url: /ru/samples
+#    solutions:
+#      name: Решения упражнений
+#      url: /ru/solutions
 
 language:
   en: English
