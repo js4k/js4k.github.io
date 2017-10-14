@@ -11,7 +11,7 @@ lang: ru
     {% assign posts=site.posts | where:"lang", page.lang %}
     {% for post in posts %}
       <li>
-        <span class="post-meta">{% include date.html date=post.date %}{% if false %}{{ day }}{{ sup }} {{ month }} {{ year }}{{ post.date | date: "%d.%m.%Y" }}{% endif %}</span>
+        <span class="post-meta">{% include rus_date.html date=post.date %}</span>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
