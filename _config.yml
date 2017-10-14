@@ -34,20 +34,20 @@ nav:
       url: /
     about:
       name: About
-      url: /about/
+      url: /about
   ru:
     home:
       name: Главная
       url: /ru/
     about:
       name: О сайте
-      url: /ru/about/
+      url: /ru/about
     samples:
       name: Код из книги
-      url: /ru/samples/
+      url: /ru/samples
     solutions:
       name: Решения упражнений
-      url: /ru/solutions/
+      url: /ru/solutions
 
 language:
   en: English
