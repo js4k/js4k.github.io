@@ -27,13 +27,13 @@
       <div id="banner">
         <a id="logo" href="https://twitter.com/{{ site.twitter_username }}" title="{{ site.twitter_link_title[page.lang] }}"></a>{% if false %}
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>{{ site.view_on_github[page.lang] | default: site.view_on_github.en }}</strong></a>{% endif %}
-        <div class="nav fork">
+        <nav class="banner_nav">
           <ul>
         {% for item in site.nav[page.lang] %}
           <li><a href="{{ item[1].url }}" class="button {{ page.lang }}">{{ item[1].name }}</a></li>
         {% endfor %}
         </ul>
-      </div>
+      </nav>
       {% if site.show_downloads %}
         <div class="downloads">
           <span>{{ site.downloads[page.lang] }}:</span>
