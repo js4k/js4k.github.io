@@ -2,7 +2,7 @@
 layout: default
 ref: home
 lang: ru
-rermalink: /ru/
+permalink: /ru/
 title: Главная
 description: Этот сайт для тех счастливчиков, которые начали учиться программировать на JavaScript читая замечательную книгу Ника Моргана «JavaScript для детей»
 ---
