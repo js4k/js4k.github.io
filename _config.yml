@@ -83,3 +83,9 @@ code_download:
   ru:
     name: Примеры
     url: https://github.com/js4k/JavaScriptForKidsCodeRU/archive/master.zip
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  ignore:
+    envs: [local]
