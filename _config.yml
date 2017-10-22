@@ -74,7 +74,7 @@ solutions_download:
     url: https://www.nostarch.com/download/JavaScriptForKidsSolutions.zip
   ru:
     name: Упражнения
-    url: https://github.com/js4k/JavaScriptForKidsSolutionsRU/archive/master.zip
+    url: https://github.com/js4k/JavaScriptForKidsSolutionsRU/archive/v1.0.0.zip
     
 code_download:
   en:
@@ -82,7 +82,7 @@ code_download:
     url: https://www.nostarch.com/download/JavaScriptForKidsCode.zip
   ru:
     name: Примеры
-    url: https://github.com/js4k/JavaScriptForKidsCodeRU/archive/master.zip
+    url: https://github.com/js4k/JavaScriptForKidsCodeRU/archive/v1.0.0.zip
 
 compress_html:
   clippings: all

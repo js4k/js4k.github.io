@@ -6,35 +6,55 @@ layout: compress
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ page.description | default: site.description[page.lang] }}{% endif %}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}{% for post in posts %}
-    <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />{% endfor %}
-    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}{% for page in pages %}
-    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />{% endfor %}
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>{% if page.title %}{{ page.title | escape }}
+      {% else %}{{ site.title[page.lang] | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}
+    {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}
+    {{ page.description | default: site.description[page.lang] }}{% endif %}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' 
+    | prepend: site.baseurl | prepend: site.url }}">
+    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+    {% for post in posts %}
+    <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />
+    {% endfor %}
+    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+    {% for page in pages %}
+    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
+    {% endfor %}
+    <link rel="alternate" type="application/rss+xml" 
+    title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] 
+    | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' 
+    | append: site.github.build_revision | relative_url }}">
+    <script 
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+    ></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+    user-scalable=no">
     {% include icons.html %}
   </head>
   <body>
       <header>
-        <h1>{{ site.title[page.lang] | default: site.github.repository_name }}</h1>
-        <p>{{ site.description[page.lang] | default: site.github.project_tagline }}</p>
+        <h1>{{ site.title[page.lang] | default: site.github.repository_name }}
+        </h1>
+        <p>{{ site.description[page.lang] 
+        | default: site.github.project_tagline }}</p>
       </header>
       <div id="banner">
-        <a id="logo" href="https://twitter.com/{{ site.twitter_username }}" title="{{ site.twitter_link_title[page.lang] }}"></a>{% if false %}
-        <a href="{{ site.github.repository_url }}" class="button fork"><strong>{{ site.view_on_github[page.lang] | default: site.view_on_github.en }}</strong></a>{% endif %}
+        <a id="logo" href="https://twitter.com/{{ site.twitter_username }}" 
+          title="{{ site.twitter_link_title[page.lang] }}"></a>{% if false %}
+        <a href="{{ site.github.repository_url }}" class="button fork"><strong>
+            {{ site.view_on_github[page.lang] | default: site.view_on_github.en }}
+          </strong></a>{% endif %}
         <nav>
           <ul>
         {% for item in site.nav[page.lang] %}
-          <li><a href="{{ item[1].url }}" class="button {{ page.lang }}">{{ item[1].name }}</a></li>
+          <li><a href="{{ item[1].url }}" class="button {{ page.lang }}"
+              >{{ item[1].name }}</a></li>
         {% endfor %}
         </ul>
       </nav>
@@ -42,8 +62,10 @@ layout: compress
         <div class="downloads">
           <span>{{ site.downloads[page.lang] }}:</span>
           <ul>
-            <li><a href="{{ site.code_download[page.lang].url }}" class="button">{{ site.code_download[page.lang].name }}</a></li>
-            <li><a href="{{ site.solutions_download[page.lang].url }}" class="button">{{ site.solutions_download[page.lang].name }}</a></li>
+            <li><a href="{{ site.code_download[page.lang].url }}" 
+                class="button">{{ site.code_download[page.lang].name }}</a></li>
+            <li><a href="{{ site.solutions_download[page.lang].url }}" 
+                class="button">{{ site.solutions_download[page.lang].name }}</a></li>
           </ul>
         </div>
       {% endif %}
@@ -73,9 +95,14 @@ layout: compress
           <a href="/ru/">Русский</a>.
         </small></p>
         {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+          <p>Project maintained by <a href="{{ site.github.owner_url }}"
+            >{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a> <a class="github-button" href="https://github.com/js4k/js4k.github.io" data-show-count="true" aria-label="Star js4k/js4k.github.io on GitHub">{{ site.view_on_github[page.lang] }}</a> </small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a 
+            href="https://twitter.com/michigangraham">mattgraham</a> <a 
+            class="github-button" href="https://github.com/js4k/js4k.github.io" 
+            data-show-count="true" aria-label="Star js4k/js4k.github.io on GitHub">
+            {{ site.view_on_github[page.lang] }}</a> </small></p>
       </footer>
     </div>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
