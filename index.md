@@ -1,5 +1,4 @@
 ---
-layout: default
 ref: home
 lang: en
 ---

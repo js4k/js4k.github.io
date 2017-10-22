@@ -1,5 +1,4 @@
 ---
-layout: default
 ref: samples
 lang: ru
 title: Код из книги

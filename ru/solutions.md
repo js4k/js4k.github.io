@@ -1,5 +1,4 @@
 ---
-layout: default
 ref: solutions
 lang: ru
 title: Решения упражнений
