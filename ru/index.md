@@ -28,8 +28,8 @@ description: >
 
 **Часто задаваемые вопросы:**
 
-### В файлах примеров кода или решений упражнений текст на русском \
-отображается кракозябрами
+<h3>В файлах примеров кода или решений упражнений текст на русском 
+отображается кракозябрами</h3>
 
 Это связано с тем что ваш редактор текста не распознал кодировку текста 
 автоматически. Используйте редактор [Sublime Text][5], который поддерживает 
@@ -51,8 +51,7 @@ description: >
 Пишите и подписывайтесь в [Твиттере][6] и в [вКонтакте][7]
 
 [1]: https://github.com/skilldrick "Ник Морган на GitHub.com"
-[2]: https://www.mann-ivanov-ferber.ru/books/javascript-dlya-detej/ "книга 
-«JavaScript для детей» на сайте издательства «МИФ»"
+[2]: https://www.mann-ivanov-ferber.ru/books/javascript-dlya-detej/ "книга «JavaScript для детей» на сайте издательства «МИФ»"
 [3]: https://js4k.github.io/ru/samples
 [4]: https://js4k.github.io/ru/solutions
 [5]: https://www.sublimetext.com
