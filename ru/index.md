@@ -38,7 +38,7 @@ description: >
 когда вам предлагают купить его выбирать **Cancel**, так вы не нарушите никакие
 законы.
 
-![Всплывающее окно редактора Sublime Text предлагающее купить лицензию][13]
+![Всплывающее окно редактора Sublime Text предлагающее купить лицензию][14]
 
 Кроме того есть огромное количество замечательных и при этом полностью 
 бесплатных текстовых редакторов, которые вы можете использовать вместо 
@@ -48,6 +48,8 @@ description: >
 - [VS Code][10]
 - [Brackets][11]
 - [Atom][12]
+
+Вот [хороший обзор][13] этих редакторов.
 
 <h3>В файлах примеров кода или решений упражнений текст на русском 
 отображается кракозябрами</h3>
@@ -85,4 +87,5 @@ description: >
 [10]: https://code.visualstudio.com "VS Code"
 [11]: http://brackets.io "Brackets - a modern, open source text editor that understands web design."
 [12]: https://atom.io "Atom - a hackable text editor for the 21st Century"
-[13]: {{ '/assets/images/subl.png' | relative_url }} "Всплывающее окно редактора Sublime Text предлагающее купить лицензию"
+[13]: https://htmlacademy.ru/blog/40-editors-for-the-coders "статья «Текстовые редакторы для верстальщика» на сайте «HTML academy»"
+[14]: {{ '/assets/images/subl.png' | relative_url }} "Всплывающее окно редактора Sublime Text предлагающее купить лицензию"
