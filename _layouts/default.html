@@ -35,8 +35,10 @@ layout: compress
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, 
     user-scalable=no">
+    {% if page.ref == "home" and page.lang == "en" %}
     <meta name="google-site-verification" content="1ivWJlkLM-kogP2EYRCBCx9DUjdTMfRDxsnS_3bUkfQ" />
     <meta name="yandex-verification" content="b3c877be82340416" />
+    {% endif %}
     {% include icons.html %}
   </head>
   <body>
