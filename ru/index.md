@@ -80,9 +80,9 @@ description: >
 [2]: https://www.mann-ivanov-ferber.ru/books/javascript-dlya-detej/ "книга «JavaScript для детей» на сайте издательства «МИФ»"
 [3]: https://js4k.github.io/ru/samples
 [4]: https://js4k.github.io/ru/solutions
-[5]: https://www.sublimetext.com "Sublime text editor"
+[5]: https://www.sublimetext.com "Sublime Text editor"
 [6]: https://twitter.com/js4kids "наш Twitter"
-[7]: https://vk.com/js4kids "группа вконтакте"
+[7]: https://vk.com/js4kids "группа в вКонтакте"
 [8]: https://ru.wikipedia.org/wiki/Перевод_строки "Статья «Перевод строки» на Википедии"
 [9]: https://ru.wikipedia.org/wiki/Условно-бесплатное_программное_обеспечение "Статья «Условно-бесплатное программное обеспечение» на Википедии"
 [10]: https://code.visualstudio.com "VS Code"
