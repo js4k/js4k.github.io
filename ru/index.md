@@ -80,11 +80,11 @@ description: >
 [2]: https://www.mann-ivanov-ferber.ru/books/javascript-dlya-detej/ "книга «JavaScript для детей» на сайте издательства «МИФ»"
 [3]: https://js4k.github.io/ru/samples
 [4]: https://js4k.github.io/ru/solutions
-[5]: https://www.sublimetext.com
-[6]: https://twitter.com/js4kids
-[7]: https://vk.com/js4kids
-[8]: https://ru.wikipedia.org/wiki/Перевод_строки
-[9]: https://ru.wikipedia.org/wiki/Условно-бесплатное_программное_обеспечение "Условно-бесплатное программное обеспечение"
+[5]: https://www.sublimetext.com "Sublime text editor"
+[6]: https://twitter.com/js4kids "наш Twitter"
+[7]: https://vk.com/js4kids "группа вконтакте"
+[8]: https://ru.wikipedia.org/wiki/Перевод_строки "Статья «Перевод строки» на Википедии"
+[9]: https://ru.wikipedia.org/wiki/Условно-бесплатное_программное_обеспечение "Статья «Условно-бесплатное программное обеспечение» на Википедии"
 [10]: https://code.visualstudio.com "VS Code"
 [11]: http://brackets.io "Brackets - a modern, open source text editor that understands web design."
 [12]: https://atom.io "Atom - a hackable text editor for the 21st Century"
