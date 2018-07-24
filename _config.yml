@@ -97,3 +97,6 @@ defaults:
     values:
       layout: "default"
       sitemap: true
+
+sass:
+  style: compressed
