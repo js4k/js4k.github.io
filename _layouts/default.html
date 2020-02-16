@@ -12,18 +12,18 @@ layout: compress
     {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}
     {{ page.description | default: site.description[page.lang] }}{% endif %}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' 
-    | prepend: site.baseurl  }}">
+     | relative_url }}">
     {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
     {% for post in posts %}
-    <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url | prepend: site.baseurl}}" />
+    <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url | relative_url }}" />
     {% endfor %}
     {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
     {% for page in pages %}
-    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | prepend: site.baseurl }}" />
+    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | relative_url }}" />
     {% endfor %}
     <link rel="alternate" type="application/rss+xml" 
     title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] 
-     | prepend: site.url }}">
+      | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' 
     | append: site.github.build_revision | relative_url }}">
     <script 
@@ -40,7 +40,6 @@ layout: compress
     <meta name="yandex-verification" content="b3c877be82340416" />
     {% endif %}
     {% include icons.html %}
-    {% include pixel.html %}
   </head>
   <body>
       <header>
@@ -58,7 +57,7 @@ layout: compress
         <nav>
           <ul>
         {% for item in site.nav[page.lang] %}
-          <li><a href="{{ item[1].url | prepend: site.baseurl }}" class="button {{ page.lang }}"
+          <li><a href="{{ item[1].url | relative_url }}" class="button {{ page.lang }}"
               >{{ item[1].name }}</a></li>
         {% endfor %}
         </ul>
@@ -67,9 +66,9 @@ layout: compress
         <div class="downloads">
           <span>{{ site.downloads[page.lang] }}:</span>
           <ul>
-            <li><a href="{{ site.code_download[page.lang].url | prepend: site.baseurl}}" 
+            <li><a href="{{ site.code_download[page.lang].url | relative_url }}" 
                 class="button">{{ site.code_download[page.lang].name }}</a></li>
-            <li><a href="{{ site.solutions_download[page.lang].url | prepend: site.baseurl}}" 
+            <li><a href="{{ site.solutions_download[page.lang].url | relative_url }}" 
                 class="button">{{ site.solutions_download[page.lang].name }}</a></li>
           </ul>
         </div>
@@ -87,11 +86,11 @@ layout: compress
         {{ site.page_languages[page.lang] }}: 
         {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
           {% for post in posts %}
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ site.language[post.lang] }}</a>
+          <a href="{{ post.url | relative_url }}">{{ site.language[post.lang] }}</a>
           {% endfor %}
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
           {% for page in pages %}
-          <a href="{{ page.url | prepend: site.baseurl }}">{{ site.language[page.lang] }}</a>
+          <a href="{{ page.url | relative_url }}">{{ site.language[page.lang] }}</a>
           {% endfor %}
         </small></p>
         <p><small>
