@@ -1,7 +1,7 @@
-{% assign ifolder = "/assets/images/icons" %}   
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ ifolder }}/apple-icon-57x57.png">
+{% assign ifolder = "/assets/images/icons" | relative_url %}   
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ ifolder}}/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ ifolder }}/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ ifolder }}/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="{{ ifolder }}/apple-icon-76x76.png">
@@ -14,8 +14,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ ifolder }}/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ ifolder }}/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ ifolder }}/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/icons/manifest.json">
+    <link rel="manifest" href="{{ ifolder }}/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ ifolder }}/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta name="msapplication-config" content="{{ site.baseurl }}/browserconfig.xml" />
